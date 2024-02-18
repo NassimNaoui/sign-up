@@ -2,7 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+@font-face {
+	font-family: 'Norse-Bold';
+	src: url('Norse-Bold.otf');
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,6 +65,7 @@ table {
 	max-width: 500px;
 	overflow: hidden;
 	position: relative;
+	flex-direction: column;
 }
 
 .plant-picture {
@@ -68,17 +74,52 @@ table {
 	position: relative;
 }
 
-.sidebar {
+
+
+.sidebar{
 	position: absolute;
 	display: flex;
 	width: 100%;
-	background-color: rgb(15, 19, 20, 0.5);
-	opacity: 70%;
+	background-color: rgb(15, 19, 20, 0.7);
 	justify-content: center;
 	align-items: center;
+	margin-top: 215px;
 }
 
 
 .odin-logo {
 	width: 20%;
+	position: relative;
+	opacity: 100%;
+}
+
+.odin {
+	font-family: Norse-Bold;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
+	padding-top: 15px;
+	position: relative;
+}
+
+.credit {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.credit-text {
+	display: flex;
+	position: absolute;
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: 100;
+	margin-bottom: 50px;
+	gap: 2px;
 }
