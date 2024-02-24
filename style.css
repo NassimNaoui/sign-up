@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
 	font-family: 'Norse-Bold';
@@ -37,6 +37,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: Roboto;
+	background-color: ;
+	
 }
 ol, ul {
 	list-style: none;
@@ -54,15 +56,16 @@ table {
 	border-spacing: 0;
 }
 
-
 .container {
 	display: flex;
 	flex-direction: row;
+	height: 100vh;
+	width: 100%;
 }
 
 .left-part {
 	display: flex;
-	max-width: 500px;
+	max-width: 45%;
 	overflow: hidden;
 	position: relative;
 	flex-direction: column;
@@ -75,7 +78,6 @@ table {
 }
 
 
-
 .sidebar{
 	position: absolute;
 	display: flex;
@@ -83,7 +85,7 @@ table {
 	background-color: rgb(15, 19, 20, 0.7);
 	justify-content: center;
 	align-items: center;
-	margin-top: 215px;
+	/*margin-top: calc((100vh/3 - 12.764721074380164vh));*/
 }
 
 
@@ -97,7 +99,8 @@ table {
 	font-family: Norse-Bold;
 	font-weight: bolder;
 	text-align: center;
-	font-size: 4em;
+	font-size: 4vw;
+	font-size: 6vh;
 	color: #fff;
 	padding-top: 15px;
 	position: relative;
@@ -118,8 +121,33 @@ a:visited {
 	display: flex;
 	position: absolute;
 	color: #fff;
-	font-size: 0.8em;
+	font-size: 1vw;
+	font-size: 1.5vh;
 	font-weight: 100;
-	margin-bottom: 50px;
+	margin-bottom: 5vh;
 	gap: 2px;
+}
+
+.right-part {
+	display: flex;
+	width: 100%;
+}
+
+.header {
+	background-color: #F9FAFB;
+	height: calc(100vh/3);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5%;
+	font-weight: 500;
+	font-size: 2vw;
+	font-size: 3vh;
+}
+
+/*.txt-header {
+	padding-left: 5%;
+	font-weight: 500;
+	font-size: 2em;
 }
