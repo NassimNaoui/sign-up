@@ -14,8 +14,5 @@ if (maDiv) {
 
   // Appliquer la valeur à la propriété margin-top
   maDiv.style.marginTop = marginAuto;
-
-  console.log('La hauteur de maDiv est de ' + hauteurEnVh + 'vh');
-} else {
-  console.error('Aucun élément avec la classe "sidebar" trouvé.');
 }
+
